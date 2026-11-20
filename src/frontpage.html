@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Daily Globe — Friday 20 November 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; }
+  body {
+    background: #f4efe3; color: #1a1712;
+    font-family: Georgia, 'Times New Roman', serif;
+    padding: 6px 15px 4px;
+  }
+  .topbar { text-align: center; border-bottom: 3px double #1a1712; padding-bottom: 4px; }
+  .topbar .motto {
+    font-family: Arial, Helvetica, sans-serif; font-size: 10px; letter-spacing: 6px;
+    color: #6e6353; text-transform: uppercase;
+  }
+  .topbar .papername { font-size: 42px; line-height: 1; font-weight: 900; letter-spacing: 2px; margin: 2px 0 5px; }
+  .datestrip {
+    display: flex; align-items: center; gap: 10px;
+    border-top: 1px solid #1a1712; padding-top: 3px;
+  }
+  .datestrip .total {
+    font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 700;
+    letter-spacing: 1.5px; color: #6e6353; white-space: nowrap;
+  }
+  .datestrip .dayline {
+    font-family: Arial, Helvetica, sans-serif; font-size: 19px; font-weight: 800;
+    letter-spacing: 1px; white-space: nowrap;
+  }
+  .datestrip .check {
+    font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 800;
+    letter-spacing: 0.5px; color: #7a1f1f; border: 2px solid #7a1f1f; border-radius: 3px;
+    padding: 2px 6px; white-space: nowrap;
+  }
+  .datestrip .fill { flex: 1; }
+  .leadbox { margin-top: 3px; padding-bottom: 4px; border-bottom: 2px solid #1a1712; }
+  .leadbox .eyebrow {
+    font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 800;
+    letter-spacing: 2px; color: #7a1f1f; text-transform: uppercase;
+  }
+  .leadbox h2 { font-size: 22px; line-height: 1.03; font-weight: 900; margin: 3px 0 4px; }
+  .leadbox .standfirst { font-family: Arial, Helvetica, sans-serif; font-size: 11px; line-height: 1.28; color: #2c261c; }
+  .leadbox .standfirst .cite { font-size: 9px; letter-spacing: 1px; color: #6e6353; }
+  .clockrow { margin-top: 2px; padding-bottom: 3px; border-bottom: 2px solid #1a1712; }
+  .clockrow .clockhead {
+    display: block; font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: 800;
+    letter-spacing: 1.5px; color: #7a1f1f; margin-bottom: 3px;
+  }
+  .clockrow .moments { display: flex; gap: 9px; }
+  .clockrow .moment { flex: 1; border-left: 1px solid #b3a98f; padding-left: 7px; }
+  .clockrow .moment:first-child { border-left: none; padding-left: 0; }
+  .clockrow .when {
+    display: block; font-family: Arial, Helvetica, sans-serif; font-size: 11px;
+    font-weight: 800; color: #7a1f1f; margin-bottom: 1px;
+  }
+  .clockrow .what { display: block; font-size: 9px; line-height: 1.15; }
+  .cols { display: flex; gap: 10px; margin-top: 3px; }
+  .column { flex: 1; min-width: 0; }
+  .column + .column { border-left: 1px solid #b3a98f; padding-left: 10px; }
+  .secthead {
+    font-family: Arial, Helvetica, sans-serif; font-size: 10px; font-weight: 800;
+    letter-spacing: 1px; color: #7a1f1f; text-transform: uppercase;
+    border-bottom: 2px solid #1a1712; padding-bottom: 2px; margin-bottom: 2px;
+  }
+  .story { padding: 1px 0; border-bottom: 1px solid #d5cdb8; font-size: 10px; line-height: 1.18; }
+  .story .n {
+    font-family: Arial, Helvetica, sans-serif; font-size: 9px; font-weight: 800;
+    color: #7a1f1f; margin-right: 4px;
+  }
+  .story h3 { display: inline; font-size: 10px; line-height: 1.15; font-weight: 900; }
+  .story p { font-size: 9px; line-height: 1.18; color: #2c261c; margin-top: 0; }
+  .story .cite {
+    font-family: Arial, Helvetica, sans-serif; font-size: 7px; font-weight: 700;
+    letter-spacing: 1px; color: #6e6353;
+  }
+  .story.figures { background: #1a1712; color: #f4efe3; padding: 4px 6px; border-bottom: none; }
+  .story.figures h3 { color: #eec44f; }
+  .story.figures p { color: #e6dfcd; }
+  .story.figures .cite { color: #b3a98f; }
+  .story.figures .n { color: #eec44f; }
+  .footline {
+    margin-top: 2px; border-top: 1px solid #1a1712; padding-top: 2px;
+    text-align: center; font-family: Arial, Helvetica, sans-serif;
+    font-size: 8.5px; letter-spacing: 1.2px; color: #6e6353; text-transform: uppercase;
+    line-height: 1.45;
+  }
+</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="motto">The world &mdash; one day, one page</div>
+    <div class="papername">THE DAILY GLOBE</div>
+    <div class="datestrip">
+      <span class="total">50 SOURCED STORIES</span>
+      <span class="fill"></span>
+      <span class="dayline">FRIDAY, 20 NOVEMBER 2026</span>
+      <span class="fill"></span>
+      <span class="check">&#10003; DATE CHECK: Friday 20 November 2026</span>
+    </div>
+  </header>
+
+  <section class="leadbox">
+    <div class="eyebrow">01 &middot; Markets &middot; The sell-off deepens</div>
+    <h2>GLOBAL SELL-OFF DEEPENS: NEARLY $9 TRILLION WIPED OFF WORLD STOCKS SINCE AUGUST</h2>
+    <p class="standfirst">AI and interest-rate fears drive an avalanche of selling from stocks to copper and gold; Taiwan&rsquo;s 17% weekly plunge is its biggest since the early 1990s, and Wall Street&rsquo;s fear gauge, the VIX, hits 30 on Friday &mdash; its highest since late March. <span class="cite">REUTERS</span></p>
+    <p class="standfirst">Asia slides: the Nikkei down about 5%, the KOSPI &minus;5.2% and Taiwan &minus;6.2%; MSCI&rsquo;s Asia-Pacific index outside Japan falls 3.3%, the region&rsquo;s worst week since 2020. <span class="cite">REUTERS</span></p>
+  </section>
+
+  <div class="clockrow">
+    <span class="clockhead">THE DAY IN UTC &mdash; TIMES APPROXIMATE</span>
+    <div class="moments"><div class="moment"><span class="when">~00:00</span><span class="what">Kyiv bridges hit overnight; 8 killed</span></div><div class="moment"><span class="when">~03:00</span><span class="what">Asian stocks slide; Nikkei down ~5%</span></div><div class="moment"><span class="when">~09:00</span><span class="what">Berlin: allies meet on Ukraine talks</span></div><div class="moment"><span class="when">~14:30</span><span class="what">Anthropic down 9.5% at NY open</span></div><div class="moment"><span class="when">~18:00</span><span class="what">Trump press conference at White House</span></div><div class="moment"><span class="when">~20:00</span><span class="what">COP31 draft drops fossil-fuel phase-out</span></div></div>
+  </div>
+
+  <div class="cols">
+    <div class="column"><div class="secthead">War &amp; Security</div><div class="story"><span class="n">02</span><h3>Kyiv strikes kill eight</h3><p>Russian overnight strikes target Kyiv&rsquo;s bridges, killing eight; 28 injured across nine regions, and a Lviv station strike kills two.</p><span class="cite">BBC</span></div><div class="story"><span class="n">03</span><h3>Russia violates Polish airspace</h3><p>Three objects &mdash; allegedly two missiles and a drone &mdash; cross into Poland overnight, the defence minister says.</p><span class="cite">REUTERS</span></div><div class="story"><span class="n">04</span><h3>Estonia to shut Russian border</h3><p>The border closes for at least six months, with a decision later on extending it; Moscow calls the move a new &ldquo;Iron Curtain&rdquo;.</p><span class="cite">REUTERS</span></div><div class="story"><span class="n">05</span><h3>Kerch Bridge hit a third time</h3><p>Ukraine strikes the Crimea bridge for the third time in four days, halting rail traffic; Putin vows a far more painful reply.</p><span class="cite">BBC / JAPAN TIMES</span></div><div class="story"><span class="n">06</span><h3>Houthi missile hits Riyadh tower</h3><p>Missiles hit the financial district, damaging the sovereign wealth fund tower; no injuries are reported. Gulf states condemn the attack.</p><span class="cite">SKY / MIDDLE EAST EYE</span></div><div class="story"><span class="n">07</span><h3>Hormuz tanker attacks intensify</h3><p>Iran steps up tanker attacks in the strait; one catches fire after hitting a mine. Pentagon: the US war on Iran has cost $48.3bn.</p><span class="cite">JAPAN TIMES / CBS</span></div><div class="story"><span class="n">08</span><h3>Israeli troops cross Gaza&rsquo;s Yellow Line</h3><p>The first incursion since the truce; the army says it dismantled a tunnel. Hamas calls it a flagrant violation.</p><span class="cite">BBC</span></div><div class="story"><span class="n">09</span><h3>Iraq moves on militia stronghold</h3><p>Forces deploy in Jurf al-Sakhar, a Kataib Hezbollah stronghold, under a deal to limit a group officials accuse of oil smuggling.</p><span class="cite">REUTERS</span></div><div class="story"><span class="n">10</span><h3>UK runs offensive cyber ops</h3><p>Britain is conducting offensive cyber operations against Russia, China, Iran and North Korea, a top general says.</p><span class="cite">SKY NEWS</span></div><div class="story"><span class="n">11</span><h3>US and Venezuela restore military ties</h3><p>Defence Secretary Pete Hegseth signs a deal in Caracas covering joint training and intelligence sharing.</p><span class="cite">AP</span></div></div><div class="column"><div class="secthead">Politics &amp; Diplomacy</div><div class="story"><span class="n">12</span><h3>Trump holds White House press conference</h3><p>Back from a four-day Asia trip and meetings with Xi and Putin in Shenzhen, he says the US entered from strength and notes oil prices dropping.</p><span class="cite">NPR</span></div><div class="story"><span class="n">13</span><h3>Trump: no Iran decision until new year</h3><p>&ldquo;I am not rushing into any decision. We will see what happens after the beginning of the year,&rdquo; he tells Axios about the next step in the Iran war.</p><span class="cite">AXIOS</span></div><div class="story"><span class="n">14</span><h3>Senate blocks Iran measure 51&ndash;48</h3><p>Thursday&rsquo;s vote &mdash; the first since the midterms &mdash; defeats the war-powers resolution the House passed in September.</p><span class="cite">NYT</span></div><div class="story"><span class="n">15</span><h3>Mossad chief pushed for new Iran strikes</h3><p>Roman Gofman urged renewed US&ndash;Israeli strikes on a US visit last week, presenting intelligence on Iran&rsquo;s nuclear programme.</p><span class="cite">WSJ</span></div><div class="story"><span class="n">16</span><h3>Trump to penalise data centres abroad</h3><p>US firms building AI data centres overseas face a &ldquo;tremendous tax&rdquo;, he says, to help the US AI sector compete with China.</p><span class="cite">REUTERS</span></div><div class="story"><span class="n">17</span><h3>Trump pardons Pete Rose</h3><p>Posthumous pardon for baseball&rsquo;s career hits leader, banned for betting on games and convicted of tax evasion more than 36 years ago.</p><span class="cite">BBC / AP</span></div><div class="story"><span class="n">18</span><h3>Judge: USDA chief&rsquo;s religious emails unconstitutional</h3><p>Brooke Rollins&rsquo;s messages to 100,000 staff on Christian holidays violate the establishment clause, a judge rules.</p><span class="cite">AP</span></div><div class="story"><span class="n">19</span><h3>Mamdani to close Rikers Island</h3><p>The New York mayor-elect sets out a plan to close the city&rsquo;s notorious jail.</p><span class="cite">AP</span></div><div class="story"><span class="n">20</span><h3>Senate passes energy permitting overhaul 62&ndash;33</h3><p>The bill, backed by the AI and energy sectors, must still clear the House before reaching Trump&rsquo;s desk.</p><span class="cite">CNBC</span></div><div class="story"><span class="n">21</span><h3>UK and EU agree youth mobility deal</h3><p>Ages 18 to 31 may travel, work or study for up to three years each way; the deal also covers food exports and emissions trading.</p><span class="cite">BBC</span></div><div class="story"><span class="n">22</span><h3>Berlin: Europe ready for Russia talks</h3><p>The coalition of the willing meets; Kushner says Trump is open to a NATO-style guarantee for Ukraine, and Trump says Putin &ldquo;wants the deal done&rdquo;.</p><span class="cite">BBC / AXIOS</span></div></div><div class="column"><div class="secthead">Markets &amp; Economy</div><div class="story"><span class="n">23</span><h3>Asian stocks slide; Nikkei down ~5%</h3><p>MSCI Asia-Pacific ex-Japan falls 3.3%; the KOSPI drops 5.2% and Taiwan 6.2% on the day, on track for the worst week since 2020.</p><span class="cite">REUTERS</span></div><div class="story"><span class="n">24</span><h3>Anthropic falls 9.5% after record IPO</h3><p>Shares drop to ~$88 early Friday from Thursday&rsquo;s $97.17 close, still above the $83 IPO price; underwriters take their full option, lifting the total to ~$93.5bn.</p><span class="cite">TECHXPLORE</span></div><div class="story"><span class="n">25</span><h3>Dollar near 19-month high</h3><p>The dollar index sits near 103.8&ndash;103.9, on track for a fourth weekly gain; Japan core inflation hits 2.2%.</p><span class="cite">REUTERS</span></div><div class="story"><span class="n">26</span><h3>Gold falls 4.2%</h3><p>Gold is down about 11% in a month as a stronger dollar and higher rates bite; the US 10-year yield stands above 5%.</p><span class="cite">CNBC</span></div><div class="story"><span class="n">27</span><h3>Oil holds $90&ndash;$94 range</h3><p>Prices stay in a tight range despite Middle East tension, taking a back seat in the broader sell-off.</p><span class="cite">REUTERS</span></div><div class="story"><span class="n">28</span><h3>IMF: public debt nears 100% of GDP</h3><p>Chief Kristalina Georgieva warns global public debt will soon reach 100% of world GDP, the highest since World War II.</p><span class="cite">MERCOPRESS</span></div><div class="story"><span class="n">29</span><h3>Brazil sells $1bn to curb dollar</h3><p>The central bank intervenes as the dollar nears 5.93 reais; the real has lost about 18% over the past month.</p><span class="cite">MERCOPRESS</span></div><div class="story"><span class="n">30</span><h3>IEA: Iran war scars energy markets</h3><p>The war has crushed confidence in Hormuz &mdash; the biggest threat to energy security in history, the agency says. Data-centre power use could double by 2030.</p><span class="cite">EURONEWS</span></div><div class="story"><span class="n">31</span><h3>US group wins Kenya minerals deal</h3><p>Frontier Minerals beats Chinese rivals for Mrima Hill, estimated to hold deposits worth over $60bn.</p><span class="cite">BBC</span></div><div class="story figures"><span class="n">$$</span><h3>BY THE NUMBERS</h3><p>~$9tn &mdash; wiped off world stocks since August</p><p>30 &mdash; VIX on Friday, highest since late March</p><p>$48.3bn &mdash; cost of US war on Iran, per Pentagon</p><p>~$93.5bn &mdash; Anthropic IPO total, largest on record</p><p>$2.36bn &mdash; GTA VI estimated first-day sales</p><span class="cite">THE DAY IN FIGURES</span></div></div><div class="column"><div class="secthead">World &amp; Society</div><div class="story"><span class="n">32</span><h3>COP31 draft drops fossil-fuel phase-out</h3><p>Negotiators strip any reference to ending fossil-fuel use from the slimmed-down Antalya draft; net-zero dates go too as talks enter their final day.</p><span class="cite">JAPAN TIMES</span></div><div class="story"><span class="n">33</span><h3>WFP: 91m people targeted, $12bn needed</h3><p>The Global Outlook 2027 plans to reach 91 million people; the agency warns of a possible third major food crisis in six years.</p><span class="cite">UN GENEVA</span></div><div class="story"><span class="n">34</span><h3>UNICEF flags child casualties in Ukraine</h3><p>An alarming number in the first 10 months of 2026, reported from a Kyiv kindergarten hit two weeks earlier.</p><span class="cite">UN GENEVA</span></div><div class="story"><span class="n">35</span><h3>Fiji and Tonga declare disasters</h3><p>Drought reaches crisis levels in Fiji and Tonga declares an emergency; the Cook Islands declare one ahead of Cyclone Xavier.</p><span class="cite">RFI / RNZ</span></div><div class="story"><span class="n">36</span><h3>El Ni&ntilde;o storm threatens Los Angeles</h3><p>Flood and mudslide threats rise, with possible evacuations; coastal cities report erosion and vanishing beaches.</p><span class="cite">STRAITS TIMES</span></div><div class="story"><span class="n">37</span><h3>Nearly 600 women killed in South Africa</h3><p>The BBC reports nearly 600 women killed within three months.</p><span class="cite">BBC</span></div><div class="story"><span class="n">38</span><h3>Nigeria moves to end jail for attempted suicide</h3><p>Nigeria moves to end jail terms for attempted suicide.</p><span class="cite">BBC</span></div><div class="story"><span class="n">39</span><h3>Texas execution takes over an hour</h3><p>Reinaldo Dennes, convicted of a 1996 killing, groans for an hour as staff struggle to find a vein. Florida sets a record: its 20th execution of 2026.</p><span class="cite">GUARDIAN</span></div><div class="story"><span class="n">40</span><h3>Pulp mill violated safety rules before blast</h3><p>A Washington pulp mill breached safety standards before a ruptured chemical tank killed 11 people, officials say.</p><span class="cite">AP</span></div><div class="story"><span class="n">41</span><h3>Youth strike in 25+ countries</h3><p>Young people in more than 25 countries join protests against living costs and militarisation.</p><span class="cite">STRAITS TIMES</span></div></div><div class="column"><div class="secthead">Science, Sport &amp; Culture</div><div class="story"><span class="n">42</span><h3>BepiColombo nears Mercury</h3><p>After eight years and 6 billion miles, the joint mission fires its main engine on 21 Nov to enter Mercury orbit &mdash; only the second ever to do so.</p><span class="cite">NPR / BBC</span></div><div class="story"><span class="n">43</span><h3>Voyager 1 reaches one light-day</h3><p>NASA&rsquo;s probe is now more than 26 billion kilometres from Earth, 49 years after its 1977 launch.</p><span class="cite">NASA</span></div><div class="story"><span class="n">44</span><h3>GTA VI: ~$2.36bn in first-day sales</h3><p>Sensor Tower estimates 24.58 million copies in roughly 24 hours &mdash; the biggest entertainment launch on record. Take-Two has released no official numbers.</p><span class="cite">POLYGON</span></div><div class="story"><span class="n">45</span><h3>Fiona the hippo dies aged nine</h3><p>Cincinnati Zoo&rsquo;s star dies on Thursday after swallowing a visitor&rsquo;s knit hat that landed in her enclosure 11 days earlier.</p><span class="cite">AP</span></div><div class="story"><span class="n">46</span><h3>Depardieu investigated over sexual allegations</h3><p>G&eacute;rard Depardieu and a French author are under investigation, the BBC reports.</p><span class="cite">BBC</span></div><div class="story"><span class="n">47</span><h3>Texans thump Colts 26&ndash;3</h3><p>C.J. Stroud throws three touchdowns on Thursday night in Houston&rsquo;s first home win; Texans 4&ndash;6, Colts 3&ndash;8.</p><span class="cite">AP</span></div><div class="story"><span class="n">48</span><h3>Rams&rsquo; Nacua has knee surgery</h3><p>Wide receiver Puka Nacua is likely out for the season, coach Sean McVay says.</p><span class="cite">AP</span></div><div class="story"><span class="n">49</span><h3>Colts to release Daniel Jones</h3><p>Indianapolis makes a quarterback change and will release Jones as its offensive woes continue.</p><span class="cite">AP</span></div><div class="story"><span class="n">50</span><h3>Alcaraz beats Cobolli 6&ndash;4, 6&ndash;1</h3><p>In 65 minutes in Turin, a day after a hamstring MRI, he finishes 3&ndash;0 without dropping a set; he faces Ben Shelton in Saturday&rsquo;s semi-final.</p><span class="cite">AP</span></div></div>
+  </div>
+
+  <footer class="footline">Friday 20 November 2026 &mdash; 50 stories, all sourced &middot; timeline in UTC, times approximate, as reported through the day<br>
+  Every story checked against the day&rsquo;s reporting; figures as reported; Thursday events are marked where first reported on Friday<br>
+  Sources: Reuters &middot; AP &middot; BBC &middot; NPR &middot; NYT &middot; WSJ &middot; Axios &middot; CNBC &middot; Sky News &middot; Euronews &middot; Guardian &middot; UN &middot; IAEA &middot; IMF &middot; NASA</footer>
+</body>
+</html>

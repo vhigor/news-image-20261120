@@ -16,6 +16,18 @@ await page.setViewportSize({ width: 1024, height: 1024 });
 await page.goto('file://' + htmlFile);
 await page.waitForLoadState('load');
 await page.waitForTimeout(500);
+const overflow = await page.evaluate(() => {
+  const foot = document.querySelector('.footline');
+  const r = foot ? foot.getBoundingClientRect() : null;
+  return {
+    docHeight: document.documentElement.scrollHeight,
+    footerBottom: r ? Math.round(r.bottom) : null,
+  };
+});
+console.log('layout:', JSON.stringify(overflow));
+if (overflow.docHeight > 1024 || (overflow.footerBottom !== null && overflow.footerBottom > 1024)) {
+  throw new Error('page overflows 1024px height: ' + JSON.stringify(overflow));
+}
 await page.screenshot({ path: pngFile });
 await browser.close();
 
